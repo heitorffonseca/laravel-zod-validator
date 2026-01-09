@@ -248,7 +248,6 @@ src/
 │  ├─ buildSchema.ts
 │  └─ getMessage.ts
 ├─ utils/
-│  ├─ expandWildcardRules.ts
 │  ├─ isEmpty.ts
 │  ├─ parseRule.ts
 │  └─ parseRules.ts
