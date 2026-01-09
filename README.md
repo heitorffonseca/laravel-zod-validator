@@ -1,5 +1,5 @@
 
-# Laravel-like Validator (Zod powered)
+# Laravel Zod Validator (Zod powered)
 
 Um **validator em TypeScript inspirado no Laravel**, usando **Zod por baixo**, com suporte a:
 
@@ -32,13 +32,13 @@ Este projeto busca o meio-termo:
 Instale my-project com npm
 
 ```bash
-  npm install @heitorffonseca/laravel-like-validator
+  npm install @heitorffonseca/laravel-zod-validator
 ```
 
 ## 🚀 Uso básico
 
 ```ts
-import { validate } from 'laravel-like-validator'
+import { validate } from '@heitorffonseca/laravel-zod-validator'
 
 validate(
   { email: '' },
@@ -56,7 +56,7 @@ Se falhar, uma exceção é lançada com os erros formatados.
 Para controle completo do fluxo:
 
 ```ts
-import { createValidator } from 'laravel-like-validator'
+import { createValidator } from '@heitorffonseca/laravel-zod-validator'
 
 const validator = createValidator(
   { email: '' },
@@ -106,7 +106,7 @@ As rules são declaradas como string, separadas por |.
 
 ---
 
-## 🧠 Comportamento Laravel-like
+## 🧠 Comportamento
 
 - Rules são ignoradas se o valor estiver vazio (`''`, `null`, `[]`), exceto `required`
 - `nullable` impede erros com `null`
@@ -136,7 +136,7 @@ campo.rule
 Você pode registrar rules customizadas globalmente.
 
 ```ts
-import { use } from 'laravel-like-validator'
+import { use } from '@heitorffonseca/laravel-zod-validator'
 
 use({
   rules: {

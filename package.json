@@ -1,6 +1,6 @@
 {
   "name": "@heitorffonseca/laravel-zod-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Laravel-style validation package using Zod",
   "type": "module",
   "main": "dist/index.cjs",
@@ -44,11 +44,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heitorffonseca/laravel-like-validator.git"
+    "url": "https://github.com/heitorffonseca/laravel-zod-validator.git"
   },
-  "homepage": "https://github.com/heitorffonseca/laravel-like-validator#readme",
+  "homepage": "https://github.com/heitorffonseca/laravel-zod-validator#readme",
   "bugs": {
-    "url": "https://github.com/heitorffonseca/laravel-like-validator/issues"
+    "url": "https://github.com/heitorffonseca/laravel-zod-validator/issues"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
