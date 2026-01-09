@@ -1,0 +1,31 @@
+# dependências
+node_modules/
+
+# build
+dist/
+*.tsbuildinfo
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# cache
+.eslintcache
+.cache
+.tmp
+.temp
+
+# env
+.env
+.env.*
+
+# sistema
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+!.vscode/extensions.json
+.idea/

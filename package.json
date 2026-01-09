@@ -1,0 +1,57 @@
+{
+  "name": "@heitorffonseca/laravel-zod-validator",
+  "version": "1.0.0",
+  "description": "Laravel-style validation package using Zod",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "zod",
+    "validation",
+    "laravel",
+    "validator",
+    "typescript"
+  ],
+  "author": "Heitor Fonseca",
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.52.0",
+    "@typescript-eslint/parser": "^8.52.0",
+    "@vitest/coverage-v8": "^4.0.16",
+    "eslint": "^9.39.2",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heitorffonseca/laravel-like-validator.git"
+  },
+  "homepage": "https://github.com/heitorffonseca/laravel-like-validator#readme",
+  "bugs": {
+    "url": "https://github.com/heitorffonseca/laravel-like-validator/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}
